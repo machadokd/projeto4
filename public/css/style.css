@@ -1,0 +1,117 @@
+html, body {margin: 10px; font: 400 11pt/16pt "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+
+/* HEADER */
+#menu{ position: relative; max-width: 1000px; margin: 0 auto; word-wrap: break-word; margin-bottom: 10px; }
+
+@media screen and (max-width: 768px) { #formula_selector { margin-left: 20px; margin-right: 20px; position: relative; margin: 0 auto; } }
+@media screen and (min-width: 768px) { #formula_selector { max-width: 710px; } }
+@media screen and (min-width: 1024px) { #formula_selector { max-width: 1000px; } }
+#formula_selector li { position: relative; font-size: 1.5em; vertical-align: top; }
+#formula_selector li span.data-year { font-size: 0.8em; line-height: 1; display: block; padding-top: 5px; padding-bottom: 2px; }
+#formula_selector li span.definition { font-size: 0.5em; line-height: 1; display: block; padding-top: 5px; padding-bottom: 2px; }
+
+.tab { list-style-type: none; padding: 0; margin: 0.25em 0; font-size: 1.2em; text-align: center; }
+.tab li { display: inline-block; width: 22%; margin: 0; padding: 0.5em 1%; color: black; text-align: center; border-radius: 2pt; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;  }
+.tab li:hover { background-color: gainsboro; }
+.tab li.active { background-color: #003366; color: white; font-weight: 500; }
+@media screen and (max-width: 1024px) { .tab li { width: 46%; } }
+@media screen and (max-width: 768px) { .tab li { width: 100%; } }
+.tab li > div { line-height: 1.2 }
+
+
+/* PARTE INPUTS - VARIÁVEIS */
+
+#calculadora{ position: relative; max-width: 1000px; margin: 0 auto; word-wrap: break-word; }
+
+.categoria{ margin-left: 0px; margin-top: 0px;margin-right: -23px; }
+
+.slider{ float: right; margin-top: 3px; margin-right: 5px; width: 80px; }
+.slider-label-anos{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-colestrol{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-colestrolHDL{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-PAS{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-PAD{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-Peso{ float: right; margin-right: 5px; width: 50px; }
+.slider-label-altura{ float: right; margin-right: 5px; width: 50px; }
+.slider-desc-anos{ float: right; margin-right: -23px; }
+.slider-desc-mmol{ float: right; margin-right: -32px; }
+.slider-desc-mmhg{ float: right; margin-right: -34px; }
+.slider-desc-kg{ float: right; margin-right: -7px; }
+.slider-desc-cm{ float: right; margin-right: -11px; }
+
+.toggle { float: right; border: 1px solid #003366; border-radius: 2pt; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-right: 50px;}
+.toggle span { display: inline-block; padding: 0.1em 0.5em; color: black; }
+.toggle span:first-child { padding-left: 0.6em; }
+.toggle span:last-child { padding-right: 0.6em; }
+.toggle span.active { background-color: #003366; color: white; font-weight: 500; }
+.toggle span.active::before {    content: "\2714";  padding-right: 5px; }
+.toggle.disabled { opacity: 0.5; }
+
+#informação-variveis-principais{ margin-bottom: 5%; }
+#informação-variveis-secundarias{ margin-top: 3%; margin-bottom: 5%; }
+
+#nota{ margin-top: 5%; padding-left: 0.5%; }
+#background-nota { width: 70%; background-color: rgba(255, 0, 0, 0.63); margin-left: 20%;}
+
+
+/* PARTE IMAGENS - RESULTADOS */
+
+#faces { margin-top: 5px; width: 320px; height: 320px; opacity: 0.25;}
+#faces img { width: 32px; height: 32px; vertical-align: top; }
+#matriz_score img{margin-top: 5px; width: 200px; height: 150px;}
+
+#resultados{ padding-left: 100px; }
+#resultado{ display: inline-block; font-weight: bold; }
+#resultadoFramingham{ display: inline-block; font-weight: bold; padding-right: 5%;}
+#descricao_score{ margin-top: 5%; padding-right: 10%;}
+
+
+/* PARTE RECOMENDAÇÕES */ 
+#titulo-recomendacoes{ background-color: rgb(201, 198, 198); width: 400px; min-height: 100px; display: flex; justify-content: center; align-items: center; margin-left: 0%; margin-bottom: 5%; margin-top: 5%;}
+#recomendacoes{ background-color: rgb(201, 198, 198); width: 400px; min-height: 200px; display: flex; justify-content: center; align-items: center; margin-left: 0%;}
+
+
+
+/* LOGIN */
+
+#login{ width: 600px; height: 300px; margin: 0 auto; }
+#login_button{ margin-top: 2%; margin-left: 250px; width: 100px; }
+#frase_registo {margin-left: 20%; margin-top: 2%;}
+
+#registo_button{margin-left: 250px; width: 100px; }
+#registo{ margin-top: 2%; width: 600px; height: 300px; margin: 0 auto; }
+#frase_login {margin-left: 30%; margin-bottom: 2%;}
+#frase_recuperacao{margin-left: 25%; margin-bottom: 2%;}
+
+#recuperacao{ width: 600px; height: 300px; margin: 0 auto; }
+
+
+/* WELCOME.PHP */
+
+#botao_guardar{ opacity: 30%; margin-left: 40%; margin-top: 5%;}
+#workspace{margin-top: 6%;}
+.nav-item{padding-top: 1%;}
+
+
+/* HISTORICO.PHP */
+
+#tabela {margin-top: 5%; padding-right: 5%; padding-left: 5%;}
+
+
+
+#muda-pass-form{width: 600px; height: 300px; margin: 0 auto; }
+#muda-pass-button{ margin-top: 2%; margin-left: 250px; width: 100px; }
+#muda-pass{margin-top: 5%;}
+
+
+#nova_password_form{padding-top: 2%; width: 600px; height: 300px; margin: 0 auto;}
+#nova_password_button{margin-left: 40%;}
+
+.links{
+    text-decoration: underline; 
+    color: blue;
+}
+.links:hover{
+    color: royalblue;
+}
